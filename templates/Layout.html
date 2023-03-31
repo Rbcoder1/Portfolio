@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with rohit Borse landing page.">
+    <meta name="author" content="Devcrud">
+    <title> {% block title%} {% endblock title%} </title>
+
+    <!-- {{ url_for('static', filename='css/maincss.css') }} -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/imgs/r.png') }}">
+    <!-- css  -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/imgs/avatar.png') }}">
+    <!-- font icons -->
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='assets/vendors/themify-icons/css/themify-icons.css') }}">
+    <!-- Bootstrap + Steller  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/mainstyle.css') }}">
+
+
+    <!-- javascript  -->
+    <script src="{{ url_for('static', filename='assets/vendors/jquery/jquery-3.4.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/bootstrap/bootstrap.bundle.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/mainscript.js') }}"></script>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/work" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/resume" class="nav-link">Learning</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="{{ url_for('static', filename='assets/imgs/r.png') }}" alt="" class="brand-img"
+                        style="width: 70px; height: 70px;">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">John Doe</h5>
+                        <div class="brand-subtitle">Web Designer | Developer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Hobby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block body%}
+
+    {% endblock body %}
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+Home
+    Heading Session 
+    Intro Video (Video Resume)
+    Project Completion Highlights
+    Services
+    Query Form
+
+About
+    Information about us
+    Education
+    Skills
+    Project Overview
+    Social Media Links
+    Resume Section 
+        experience 
+        certification
+
+Contact
+    Form for Contact
+    social media Links
+    official mail 
+
+Hobby
+    About Hobby
+    Own Music Website
+    favorite singers
+    star maker link or other music related links
+
+Work
+    Project done by me 
+    current working project 
+    upcomming projects idea
+    GitHub link
+
+Learning
+    blogs
+    video content
+    event management system link 
